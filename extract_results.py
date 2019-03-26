@@ -11,6 +11,8 @@ import sys
 import numpy as np
 import csv
 
+data_dir=sys.argv[1]
+
 def find_most_recent_file(dir_files):
     high_time = None
     for i, dir1 in enumerate(dir_files):
@@ -97,7 +99,8 @@ def grab_freq(dirs):
 # MAIN
 #==============================================================================
 
-rdir = r"/home/nimbix/data/8in_00"
+rdir=data_dir
+#rdir = r"/home/nimbix/data/8in_00"
 #rdir = r"K:\Secure51\hfss\Project\KU_ASM\RF_STUDIES\TripleBandStudy\Ibrahim\NoSS\CF\30DegWedge\2p58\NoWAIM_AdjustedDK2"
 
 file_in_dir = os.listdir(rdir)
